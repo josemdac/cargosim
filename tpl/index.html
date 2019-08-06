@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>[TITLE]</title>
+    
+    <link href="static/bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/DataTables/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/dataTables.bootstrap4.min.css"/>
+    
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="static/js/scripts.js"></script>
+    <script type="text/javascript" src="static/DataTables/datatables.min.js"></script>
+    <script src="static/t2e/src/jquery.table2excel.js"></script>
+    <style>
+    
+    .container {
+      margin-top: 5em;
+    }
+    .row {
+      margin-top: 2em;
+    }
+      
+    .form-group {
+    padding-bottom: 2em;
+    padding-right: 1em;
+    }
+    
+    .form-inline.openfile {
+      color: yellow;
+      margin-left: 1em;
+      margin-right: 1em;
+      padding-left: 1em;
+      /*! border: solid; */
+      border-radius: 1em;
+      padding-right: 1em;
+    }
+    .form-inline.openfile>label {
+      padding-right: 2em;
+    }
+    .form-inline.openfile>input {
+      padding: 0.5em;
+      margin: 0.1em;
+      color: yellow;
+    }
+    #simlog {
+        width: 100%;
+        overflow: scroll;
+        height: 20em;
+        background: #111111;
+        color: lightgrey;
+        padding: 1em;
+        font-family: monospace;
+    }
+    .form-group > label {
+        width: 10em;
+        font-size: 0.7em;
+        padding: 1em;
+    }
+    </style>
+  </head>
+  <body>
+    <!--Top controls-->
+    [TOP_CONTROLS]
+    
+    <div class="container">
+	<div class="row">
+		<div class="col-md-12">
+          <!--header part-->
+          [HEADER_PART]
+			<div class="row">
+				<div class="col-md-12">
+					[FORM]
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					[LIST_BOX_PART]
+					</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 " style="overflow: auto;">
+					[RESULT_TABLE_PART]
+        </div>
+      </div>
+      <div class="row">
+				<div class="col-md-12">
+          <div id="simlog">
+          </div>
+					
+        </div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+        <!--Timeline plot-->
+        [TIMELINE]
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+  </body>
+</html>
